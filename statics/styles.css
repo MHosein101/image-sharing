@@ -1,0 +1,481 @@
+@font-face {
+    font-family:Vazir;
+    src:url('Vazir.ttf') format('TrueType');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    direction: rtl;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: 0.2s;
+}
+
+body {
+    font-family: Vazir;
+    font-size: 18px;
+    color: #333;
+}
+
+input , 
+button , 
+textarea {
+    font-family: Vazir;
+}
+
+/* Elements */
+
+div#header {
+    width: 100%;
+    padding: 25px 0;
+}
+
+div#header a {
+    display: inline-block;
+    width: fit-content;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    margin: 0 3px;
+    padding: 10px 25px;
+}
+
+div#content {
+    width: 990px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h1 ,
+.h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 ,
+.h2 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #555;
+}
+
+a.link {
+    display: inline;
+    font-size: 1rem;
+    margin: 1px 2px;
+    color: #00799d;
+    text-decoration: none;
+    border-bottom: 2px solid #00799d;
+}
+
+a.link:hover {
+    color: #00495f;
+    border-color: #00495f;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #bbb;
+    margin: 5px 0;
+}
+
+hr.v {
+    border: none;
+    margin: 15px 0;
+}
+
+hr.v.x2 {
+    margin: 30px 0;
+}
+
+hr.v.x3 {
+    margin: 45px 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+form .field {
+    margin: 10px 0;
+}
+
+a.btn ,
+button.btn ,
+input[type="button"] {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #006482;
+    border: 3px solid #006482;
+    background-color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+a.btn:hover ,
+button.btn:hover ,
+input[type="button"]:hover ,
+a.btn.active  ,
+button.btn.active  ,
+input[type="button"].active {
+    color: #fff;
+    background-color: #006482;
+}
+
+a.btn:active ,
+button.btn:active ,
+input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+a.btn.green ,
+button.btn.green ,
+input[type="button"].green {
+    color: #1ba300;
+}
+
+a.btn.green:hover ,
+button.btn.green:hover ,
+input[type="button"].green:hover {
+    color: #1ba300;
+    border-color: #1ba300;
+    background-color: #fff;
+}
+
+
+a.btn.pink ,
+button.btn.pink ,
+input[type="button"].pink {
+    color: #b500bc;
+}
+
+a.btn.pink:hover ,
+button.btn.pink:hover ,
+input[type="button"].pink:hover {
+    color: #b500bc;
+    border-color: #b500bc;
+    background-color: #fff;
+}
+
+a.btn.red ,
+button.btn.red ,
+input[type="button"].red {
+    color: #ed2000;
+}
+
+a.btn.red:hover ,
+button.btn.red:hover ,
+input[type="button"].red:hover {
+    color: #ed2000;
+    border-color: #ed2000;
+    background-color: #fff;
+}
+
+a.btn.red ,
+button.btn.red ,
+input[type="button"].red {
+    color: #ed2000;
+}
+
+a.btn.red:hover ,
+button.btn.red:hover ,
+input[type="button"].red:hover {
+    color: #ed2000;
+    border-color: #ed2000;
+    background-color: #fff;
+}
+
+input ,
+textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    border: 3px solid #989898;
+    padding: 10px;
+    direction: rtl;
+    border-radius: 15px;
+    resize: none;
+    -webkit-resize: none;
+}
+
+input:focus,
+textarea:focus  {
+    border-color: #0088b1;
+}
+
+
+input[type="email"] ,
+input[type="password"] {
+    direction: ltr;
+}
+
+/*  */
+
+#errors {
+    width: 500px;
+    margin: 20px auto 0;
+}
+
+#errors i {
+    display: block;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 2px 0;
+    color: #da3300;
+}
+
+#errors i:before {
+    content: '! ';
+}
+
+/* Signup & Login */
+
+form#auth {
+    width: 350px;
+    margin: 40px auto 0;
+}
+
+form#auth h1 {
+    margin-bottom: 40px;
+}
+
+form#auth .field {
+    margin: 10px 0;
+}
+
+form#auth .field label {
+    display: block;
+    color: #555;
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+form#auth button {
+    width: fit-content;
+    margin: 40px auto 20px;
+    padding: 15px 35px;
+}
+
+form#auth .options {
+    text-align: center;
+}
+
+/* Profile */
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info b {
+    display: block;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #555;
+    max-width: 450px;
+}
+
+.info img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.post {
+    margin: 5px;
+    opacity: 0.7;
+    text-decoration: none;
+    position: relative;
+}
+
+.post:hover {
+    opacity: 0.9;
+}
+
+.post:hover .content .text ,
+.post:hover .content .edit ,
+.post:hover .content .delete {
+    display: block;
+}
+
+.post .image {
+    line-height: 0;
+}
+
+.post img {
+    display: block;
+    max-width: 310px;
+    max-height: 310px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.post .content .text {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000aa;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: #aeaeae;
+}
+
+.post .content .text:hover {
+    background-color: #000000;
+}
+
+.post .content .edit ,
+.post .content .delete {
+    display: none;
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    background-color: #000000aa;
+    text-decoration: none;
+}
+
+.post .content .edit {
+    right: 5px;
+    color: #009bcb;
+}
+
+.post .content .delete {
+    left: 5px;
+    color: #e90000;
+}
+
+
+.post .content .edit:hover ,
+.post .content .delete:hover {
+    background-color: #000000;
+}
+
+.nothing {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #6e6e6e;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Explorer & Search */
+
+form#search {
+    margin-bottom: 20px #000000;
+    text-align: center;
+}
+
+form#search input {
+    width: 300px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border-radius: 17px;
+}
+
+.post .user {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 5px 10px;
+    background-color: #000000ba;
+    border-radius: 3px;
+}
+
+.post .user:hover {
+    background-color: #000000;
+}
+
+.post .user img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.post .user a {
+    border: none;
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Single Post */
+
+#post .split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#post .caption {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #444;
+}
+
+#post .user {
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-radius: 3px;
+}
+
+#post .user img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#post .user a {
+    font-size: 1.5rem;
+}
+
+#post > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 3px;
+}
+
+#post .actions form {
+    display: inline-block;
+    margin: 0 10px;
+}
